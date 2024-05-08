@@ -133,13 +133,13 @@ void store::place_an_order()//ثبت سفارش
     cin >> x;
     if (x == 1)
     {
-        cout << "Enter the year: ";
+        cout <<"Enter the Gregorian date: \n"<< "year: (Like: 2024)\n";
         cin >> year1;
-        cout << "\t month: ";
+        cout << "month: (Like: 01)\n";
         cin >> month1;
-        cout << "\t   day: ";
+        cout << "day: (Like: 01)\n";
         cin >> day1;
-        cout << "\t  hour: ";
+        cout << "hour: (Like: 12:15)\n";
         cin >> hour1;
         a[k].date = year1 + " " + month1 + " " + day1 + " " + hour1;
     }
@@ -211,21 +211,21 @@ void store::Turnover()//گردش مالی
     }
     else if (x == 2)
     {
-        cout << "Enter the beginning of the time range:\nEnter the year: ";
+        cout << "Enter the beginning of the time period according to the Gregorian date:\nEnter the year: (Like: 2024)";
         cin >> year1;
-        cout << "\t month: ";
+        cout << "\t month: (Like: 01)";
         cin >> month1;
-        cout << "\t   day: ";
+        cout << "\t   day: (Like: 01)";
         cin >> day1;
-        cout << "\t  hour: ";
+        cout << "\t  hour: (Like: 12:15)";
         cin >> hour1;
-        cout << "\tEnter the end of the time range:\nEnter the year: ";
+        cout << "\tEnter the end of the period according to the Gregorian date:\nEnter the year: (Like: 2024)";
         cin >> year2;
-        cout << "\t month: ";
+        cout << "\t month: (Like: 01)";
         cin >> month2;
-        cout << "\t   day: ";
+        cout << "\t   day: (Like: 01)";
         cin >> day2;
-        cout << "\t  hour: ";
+        cout << "\t  hour: (Like: 12:30)";
         cin >> hour2;
         date1 = year1 + " " + month1 + " " + day1 + " " + hour1;
         date2 = year2 + " " + month2 + " " + day2 + " " + hour2;
@@ -495,9 +495,3 @@ string store::current_time1()
         y = x.substr(20, 4) + " 12 " + x1 + " " + x.substr(11, 8);
     return y;
 }
-/*
-"╫"  :  "||"
-"█  "   : "*  "
-"╚"
-"═╧══"  : "=^=="
-*/
